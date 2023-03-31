@@ -1,8 +1,3 @@
-####################################################################################################
-# HELP: hardware-adaptive efficient latency prediction for nas via meta-learning, NeurIPS 2021
-# Hayeon Lee, Sewoong Lee, Song Chong, Sung Ju Hwang 
-# github: https://github.com/HayeonLee/HELP, email: hayeon926@kaist.ac.kr
-####################################################################################################
 import logging
 import os
 import numpy as np
