@@ -143,7 +143,7 @@ else:
 
 conf_mat_notransfer = {}
 conf_mat_transfer = {}
-repeat_times = 10
+repeat_times = 3
 samp_eff = 20
 for do_transfer in [True, False]:
     for train_space in tqdm(training_spaces):

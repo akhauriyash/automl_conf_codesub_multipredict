@@ -35,8 +35,8 @@ if not os.path.exists('cross_arch_nb_fb_hwl_vec'):
 parser = argparse.ArgumentParser()
 parser.add_argument('--config_idx', type=int, default=0)
 parser.add_argument('--mode', type=str, default='nb_to_fb', choices=['nb_to_fb', 'nb_to_nb', 'fb_to_fb', 'fb_to_nb'])
-parser.add_argument('--training_device', type=str, default='eyeriss')
-parser.add_argument('--transfer_device', type=str, default='eyeriss')
+parser.add_argument('--training_device', type=str, default='pixel2')
+parser.add_argument('--transfer_device', type=str, default='pixel2')
 str_args = parser.parse_args()
 samp_testing = [2, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30, 40]
 devices = ['fpga', 'raspi4', 'eyeriss', 'val_accuracy'][:-1]

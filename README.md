@@ -9,9 +9,9 @@
 
 ## Transfer Search Space Experiments (Accuracy Cross-Search-Space)
 
-1. To run: ```transfer_experiments.py --crosstask_m 'micro_to_macro'```. The task transfer sets are provided in the ```transfer_experiments.py``` codebase. 
+1. To run: ```transfer_experiments.py --crosstask_m 'all'```. The task transfer sets are provided in the ```transfer_experiments.py``` codebase. 
 2. Custom transfer tasks can be designed and executed by adding an if condition to crosstask_m and setting the appropriate ```training_spaces``` and ```testing_sets```. 
-3. Confusion matrices will be saved in ```fs_zcp_crosstask```
+3. Confusion matrices will be saved in ```fs_zcp_crosstask```. Note that this test studies whether pre-training with ZCP of a source search space helps in few-shot prediction on a target search space.
 
 ## HWL FBNet <-> NASBench201 transfer (Latency Cross-Search-Space)
 
@@ -20,3 +20,4 @@
 
 ## Link to unified dataset
 1. You can download the unified_dataset.zip and unzip it in ```./unified_dataset/```. [[Dataset Link](https://osf.io/kxty7/?view_only=a1324f5105ef4d5c8cbc173d6a71a741)]
+2. ```./unified_dataset/NAS-Bench-201-v1_1-096897.pth``` needs to be downloaded separately. Use the following command: ```gdown 16Y0UwGisiouVRxW-W5hEtbxmcHw_0hF_``` 
